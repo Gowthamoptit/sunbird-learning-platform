@@ -2,8 +2,8 @@
 - include: deploy.yml
   when: deploy_jobs | default(false)
 
-- include: stop_jobs.yml
-  when: stop_jobs | default(false)
+#- include: stop_jobs.yml
+  #when: stop_jobs | default(false)
 
-- include: start_jobs.yml
-  when: start_jobs | default(false)
+#- include: start_jobs.yml
+  #when: start_jobs | default(false)
