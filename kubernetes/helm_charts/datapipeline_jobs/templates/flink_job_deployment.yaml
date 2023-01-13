@@ -41,7 +41,7 @@ spec:
   type: ClusterIP
   {{- end }}
   {{- if eq .Values.service.type "LoadBalancer" }}
-  type: LoadBalancer
+  type: NodePort
   {{- end }}
   ports:
   - name: rest
